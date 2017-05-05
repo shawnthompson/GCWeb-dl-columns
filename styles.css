@@ -1,3 +1,7 @@
 dt {
   break-before: avoid;
 }
+
+.dl-horizontal dd, .dl-horizontal dt {
+	border: none;
+}
