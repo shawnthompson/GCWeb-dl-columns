@@ -1,5 +1,7 @@
-dt {
+dd {
   break-before: avoid;
+  -webkit-break-before: avoid;
+  page-break-before: avoid;
 }
 
 .dl-horizontal dd, .dl-horizontal dt {
