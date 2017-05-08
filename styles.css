@@ -1,9 +1,3 @@
-dd {
-  break-before: avoid;
-  -webkit-break-before: avoid;
-  page-break-before: avoid;
-}
-
-.dl-horizontal dd, .dl-horizontal dt {
+.dl-horizontal.brdr-0 dd, .dl-horizontal.brdr-0 dt {
 	border: none;
 }
