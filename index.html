@@ -309,29 +309,34 @@
 <div class="well row">
 	<h2>test</h2>
 	<div class="col-md-12">
-<dl>
-  <div class="col-md-4">
-     <dt>First Item DT</dt>
-     <dd>First Item DD</dd>
-     <dt>Second Item DT</dt>
-     <dd>Second Item DD</dd>
-  </div> 
-  <div class="col-md-4">
-     <dt>Third Item DT</dt>
-     <dd>Third Item DD</dd>
-     <dt>Fourth Item DT</dt>
-     <dd>Fourth Item DD</dd>
-  </div>
-  <div class="col-md-4">
-     <dt>Fifth Item DT</dt>
-     <dd>Fifth Item DD</dd>
-     <dt>Sixth Item DT</dt>
-     <dd>Sixth Item DD</dd>
-  </div>
+
+<dl class="row">
+                    <group class="col-md-4">
+                        <dt>@Html.Raw(CFPContent.CodeTableHeader)</dt>
+                        <dd><a href="@c.ESDCUrl" rel="external" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> @c.Code<span class="wb-inv"> @Messages.Message_LinkOpensNewPage</span></a></dd>
+                    </group>
+                    <group class="col-md-4">
+                        <dt>@Html.Raw(CFPContent.Program)</dt>
+                        <dd>@c.ProgramName</dd>
+                    </group>
+                    <group class="col-md-4">
+                        <dt>@Html.Raw(CFPContent.EndDate)</dt>
+                        <dd>@Html.CFPDateString(c.EndDate)</dd>
+                    </group>
+                    <group class="col-md-4">
+                        <dt>@Html.Raw(CFPContent.TimeLeft)</dt>
+                        <dd>@Html.CFPRemainingString(c.TimeLeft)</dd>
+                    
+</group>
 </dl>
+
 </div>
 
 </div>
+
+
+
+
 
 <div class="row">
 <div class="col-md-8">
